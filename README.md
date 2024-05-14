@@ -22,8 +22,8 @@ npm run dev
 [Quickstart](https://www.prisma.io/docs/getting-started/quickstart)
 
 ```
-npm install ts-node --save-dev
-npm install prisma --save-dev
+npm i ts-node --save-dev
+npm i prisma --save-dev
 npx prisma init --datasource-provider {provider}
 npx prisma migrate {db} --name {tag}
 ```
@@ -33,3 +33,12 @@ npx prisma migrate {db} --name {tag}
 [Docs](https://ui.shadcn.com/docs/installation/next)
 
 - `npx shadcn-ui@latest init`
+
+5. Stripe
+
+[Install Stripe CLI](https://docs.stripe.com/stripe-cli)
+
+```
+stripe login --interactive
+stripe listen --forward-to {hookUrl}
+```
